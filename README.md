@@ -1,7 +1,23 @@
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![License](https://img.shields.io/badge/License-MIT-green)
 # 🧠 Skin Disease Classification AI
 
 A deep learning-based web application for classifying skin diseases using a **Hybrid CNN + EfficientNet model**, with explainability using Grad-CAM.
 
+---
+## 📁 Project Structure
+SkinDiseaseAI/
+│
+├── app/ # Streamlit application
+├── models/ # Trained models
+├── notebooks/ # Training & experimentation
+├── utils/ # Helper functions (Grad-CAM)
+├── assets/ # Screenshots
+├── README.md
+├── requirements.txt
+└── .gitignore
 ---
 
 ## 🚀 Features
@@ -12,6 +28,14 @@ A deep learning-based web application for classifying skin diseases using a **Hy
 - 🔥 Grad-CAM visualization (model explainability)
 - 🌐 Interactive web app built with Streamlit
 
+---
+## 💡 Key Highlights
+
+- Hybrid Deep Learning Approach (CNN + EfficientNet)
+- Explainable AI using Grad-CAM
+- Handles class imbalance using class weights
+- Real-time prediction via web interface
+- Designed for medical image analysis
 ---
 
 ## 📂 Dataset
@@ -160,6 +184,24 @@ python -m streamlit run app/app.py
    - Grad-CAM heatmap  
 
 ---
+## 📸 Application Preview
+
+### 🔹 Home Screen
+![Home](assets/home.png)
+
+### 🔹 Prediction Result
+![Prediction](assets/prediction.png)
+
+### 🔹 Grad-CAM Visualization
+![GradCAM](assets/gradcam.png)
+
+---
+
+## 🌐 Live Demo
+
+Coming soon (Streamlit deployment)
+
+---
 
 ## 🧠 Technologies Used
 
@@ -184,6 +226,13 @@ python -m streamlit run app/app.py
 ## 👨‍💻 Author
 
 Hadeedulla Khan  
+
+---
+
+## 📬 Contact
+
+- GitHub: https://github.com/Hadeedullakhan24
+- LinkedIn: https://www.linkedin.com/in/hadeed-ulla-khan-a382a0366
 
 ---
 
