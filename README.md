@@ -9,16 +9,18 @@ A deep learning-based web application for classifying skin diseases using a **Hy
 ---
 ## 📁 Project Structure
 
+<pre>
 SkinDiseaseAI/
 │
-├── app/ # Streamlit application
-├── models/ # Trained models
-├── notebooks/ # Training & experimentation
-├── utils/ # Helper functions (Grad-CAM)
-├── assets/ # Screenshots
+├── app/                 # Streamlit application
+├── models/              # Trained models
+├── notebooks/           # Training & experimentation
+├── utils/               # Helper functions (Grad-CAM)
+├── assets/              # Screenshots
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+</pre>
 
 ---
 
