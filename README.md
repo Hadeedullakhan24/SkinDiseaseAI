@@ -8,6 +8,7 @@ A deep learning-based web application for classifying skin diseases using a **Hy
 
 ---
 ## 📁 Project Structure
+
 SkinDiseaseAI/
 │
 ├── app/ # Streamlit application
@@ -18,6 +19,7 @@ SkinDiseaseAI/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+
 ---
 
 ## 🚀 Features
@@ -161,7 +163,7 @@ It contains dermatoscopic images of different types of skin diseases.
 
 ## ⚙️ Installation & Setup
 
-git clone https://github.com/YOUR_USERNAME/SkinDiseaseAI.git  
+git clone https://github.com/Hadeedullakhan24/SkinDiseaseAI.git  
 cd SkinDiseaseAI  
 pip install -r requirements.txt  
 
