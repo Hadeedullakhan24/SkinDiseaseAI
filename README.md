@@ -31,6 +31,10 @@ SkinDiseaseAI/
 - 📊 Displays confidence scores and class probabilities
 - 🔥 Grad-CAM visualization (model explainability)
 - 🌐 Interactive web app built with Streamlit
+- 📊 Interactive AI dashboard (bar chart, pie chart, progress bars)
+- 🩺 Medical insights with disease description & precautions
+- 🚨 Doctor recommendation alert system
+- 📄 Downloadable diagnosis report
 
 ---
 ## 💡 Key Highlights
@@ -40,6 +44,9 @@ SkinDiseaseAI/
 - Handles class imbalance using class weights
 - Real-time prediction via web interface
 - Designed for medical image analysis
+- Interactive visualization dashboard for predictions
+- User-centric design with medical insights and recommendations
+- Downloadable report generation for practical usability
 ---
 
 ## 📂 Dataset
@@ -148,6 +155,10 @@ It contains dermatoscopic images of different types of skin diseases.
   - Confidence score
   - Class probabilities
   - Grad-CAM heatmap
+  - AI prediction dashboard (bar chart, pie chart, confidence visualization)
+  - Medical insights and preventive suggestions
+  - Doctor recommendation alerts
+  - Downloadable report feature
 
 👉 Makes the model usable in real-world scenarios
 
@@ -182,10 +193,12 @@ python -m streamlit run app/app.py
 1. Upload a skin lesion image  
 2. The model predicts the disease  
 3. View:
-   - Diagnosis result  
-   - Confidence score  
-   - Class probabilities  
+   - Diagnosis result with confidence level  
+   - Interactive dashboard (bar chart, pie chart, progress bars)  
    - Grad-CAM heatmap  
+   - Medical insights & preventive measures  
+   - Doctor recommendation alert  
+   - Downloadable report    
 
 ---
 ## 📸 Application Preview
@@ -195,6 +208,15 @@ python -m streamlit run app/app.py
 
 ### 🔹 Prediction Result
 ![Prediction](assets/prediction.png)
+
+### 🔹 AI Prediction Dashboard
+![Dashboard](assets/dashboard.png)
+
+### 🔹 Medical Insights & Suggestions
+![Insights](assets/insights.png)
+
+### 🔹 Class Probabilities
+![Probabilities](assets/probabilities.png)
 
 ### 🔹 Grad-CAM Visualization
 ![GradCAM](assets/gradcam.png)
@@ -215,6 +237,7 @@ Coming soon (Streamlit deployment)
 - NumPy / Pandas  
 - Scikit-learn  
 - Streamlit  
+- Plotly (for interactive visualizations)
 
 ---
 
@@ -243,3 +266,9 @@ Hadeedulla Khan
 ## 📜 License
 
 © 2026 Hadeedulla Khan. All rights reserved.
+
+---
+
+## ⚠️ Disclaimer
+
+This system is intended for educational purposes only and should not be used as a substitute for professional medical advice. Always consult a qualified healthcare professional for diagnosis and treatment.
