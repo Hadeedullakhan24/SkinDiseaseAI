@@ -3,7 +3,6 @@ numpy
 pandas
 scikit-learn
 matplotlib
-opencv-python
 Pillow
 streamlit
 plotly
