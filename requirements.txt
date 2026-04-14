@@ -7,3 +7,5 @@ opencv-python
 Pillow
 streamlit
 plotly
+gdown
+opencv-python-headless

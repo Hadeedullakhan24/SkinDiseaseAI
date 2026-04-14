@@ -5,6 +5,8 @@ import streamlit as st
 import numpy as np
 from utils.gradcam import make_gradcam_heatmap
 import cv2
+import gdown
+import os
 st.set_page_config(page_title="Skin Disease AI", layout="centered")
 
 st.markdown("""
@@ -39,9 +41,26 @@ from PIL import Image
 
 from keras.models import load_model
 from tensorflow.keras.applications.efficientnet import preprocess_input
+# Create models folder
+os.makedirs("models", exist_ok=True)
+
+# Replace with your file IDs
+CNN_ID = "1uu5XH812P3pSwvFJ7grlN6J5579RnRaD"
+EFF_ID = "1bZZaCq0v9ArWVrxAQjyi9whIJeUjTosO"
+
+cnn_path = "models/cnn_model_5class.h5"
+eff_path = "models/efficientnet_model_5class.h5"
+
+# Download models if not present
+if not os.path.exists(cnn_path):
+    gdown.download(f"https://drive.google.com/uc?id={CNN_ID}", cnn_path, quiet=False)
+
+if not os.path.exists(eff_path):
+    gdown.download(f"https://drive.google.com/uc?id={EFF_ID}", eff_path, quiet=False)
+    
 # Load models
-cnn_model = load_model("models/cnn_model_5class.h5")
-eff_model = load_model("models/efficientnet_model_5class.h5", compile=False)
+cnn_model = load_model(cnn_path)
+eff_model = load_model(eff_path, compile=False)
 
 # Labels
 labels = ['actinic keratosis', 'basal cell carcinoma', 'benign keratosis', 'melanoma', 'nevus']
@@ -251,10 +270,6 @@ if uploaded_file:
     st.image(superimposed_img.astype("uint8"), caption="Grad-CAM Heatmap")
     
     st.progress(float(confidence))
-    st.markdown("### 📊 Class Probabilities")
 
-    for i, label in enumerate(labels):
-        st.write(f"{label}: {final_pred[0][i]:.2f}")
-        
     st.markdown("---")
     st.warning("⚠️ This system is for educational purposes only and should not be used as a substitute for professional medical advice.")
